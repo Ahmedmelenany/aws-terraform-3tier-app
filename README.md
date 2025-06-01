@@ -2,9 +2,18 @@
 
 - Implementing an AWS project with terraform 
 
-> [!NOTE]
-> still in progress :)
 
+## Table of contents
+
+- [aws-terraform-3tier-app](#aws-terraform-3tier-app)
+  - [Table of contents](#table-of-contents)
+  - [Architecture View](#architecture-view)
+  - [Prerequisites](#prerequisites)
+  - [Configure AWS Creds](#configure-aws-creds)
+  - [Terraform Commands](#terraform-commands)
+- [Modules](./modules/)
+
+    
 ## Architecture View
 
 ![requirement](./architecture-required.png)
