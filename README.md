@@ -12,7 +12,12 @@
   - [Configure AWS Creds](#configure-aws-creds)
   - [Terraform Commands](#terraform-commands)
 - [Modules](./modules/)
-
+  - [BackEnd Module](./modules/BackEnd/)
+  - [CloudFront Module](./modules/CloudFront/)
+  - [DB Module](./modules/DB/)
+  - [FrontEnd Module](./modules/FrontEnd/)
+  - [Security Groups Module](./modules/security-groups/)
+  - [VPC Module](./modules/vpc/)
     
 ## Architecture View
 
