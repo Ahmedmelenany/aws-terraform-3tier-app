@@ -30,3 +30,12 @@ module "frontend" {
   be_alb_dns_name    = module.backend.be_alb_dns_name
   fe_image           = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/${var.frontend_ecr_repo}:latest"
 }
+
+module "backend" {
+  source             = "./modules/BackEnd"
+  vpc_id             = module.vpc.vpc_id
+  private_subnets    = module.vpc.private_subnets
+  security_group_ids = module.security_groups.be_sg_id
+  alb_Sec_group      = module.security_groups.alb_sg_id
+  be_image           = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/${var.backend_ecr_repo}:latest"
+}
